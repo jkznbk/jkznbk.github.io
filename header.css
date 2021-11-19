@@ -1,0 +1,299 @@
+*{
+    font-family: Montserrat;
+}
+
+#dropdownMenuButton1, #dropdownMenuButton2{
+    background-color:transparent;
+    border:0px solid black;
+    color : white;
+}
+
+#dropdownMenuButton1:hover, .nav-link:hover, #dropdownMenuButton2:hover{
+    font-weight:bold;
+    color:white;
+    border-color: transparent;
+    
+}
+
+header{
+    background-color: rgb(24, 23, 23);
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+footer{
+    background-color: rgb(24, 23, 23);
+    bottom:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    color:white;
+}
+
+footer div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#dropdownMenuButton1:first-child, #dropdownMenuButton2:first-child{
+    margin-top: 5px;
+}
+
+.nav-link{
+    color:white;
+}
+
+.dropdown-menu{
+    border:0px solid black;
+    width: fit-content;
+}
+
+.titre{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 60px;
+}
+
+/* années */
+
+.periode{
+    margin:20px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.periode:first-child{
+    margin-top:50px;
+}
+
+/* fin années */
+
+/* bibliographie */
+
+.bibliographie{
+    width:70%;
+    display:block;
+    margin: auto;
+}
+
+.bibliographie li{
+    list-style-type:circle;
+    text-indent:30px;
+}
+
+.bibliographie p{
+    text-indent:40px;
+    margin-bottom: 10px;
+}
+
+.bibliographie ul{
+    margin-left: 20px;
+}
+
+.bibliographie a{
+    color:black;
+}
+
+/* fin bibliographie */
+
+/* tout textes */
+
+.titreOeuvre{
+    font-size:25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.oeuvreImg img{
+    width:50%;
+    display:block;
+    margin: auto;
+    margin-bottom:10px;
+    margin-top:30px;
+    border-radius:5px;
+}
+
+.oeuvre p{
+    margin: 10;
+    font-size: 14px;
+}
+
+.oeuvre p:last-child{
+    margin-bottom:30px;
+}
+
+.oeuvre{
+    width:80%;
+    display: block;
+    margin: auto;
+    background-color: rgba(221, 217, 216, 0.459);
+    margin-bottom:30px;
+    padding:10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius:5px;
+}
+
+.oeuvre .titreOeuvre{
+    margin-bottom:30px;
+}
+
+.droite{
+    text-align:right!important;
+}
+
+.left{
+    text-align:left!important;
+}
+
+.sousTitreTexte{
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:-20px;
+    font-style: italic;
+    font-size:13px;
+    letter-spacing: 3px;
+}
+
+.oeuvreImg p{
+    text-align:center;
+    margin-bottom:0px;
+}
+
+.oeuvreImg p:last-child{
+    margin-bottom:20px;
+}
+
+#selection{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+
+#selection:last-child{
+    margin-bottom:60px;
+}
+
+#selection a{
+    color:black;
+}
+
+#selection a{
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.oeuvre .previewImg img{
+    width: 35%;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+
+.oeuvre .previewImg img:hover, .textePreview:hover{
+    cursor: pointer;
+}
+
+.oeuvre .previewImg{
+    font-size:10px;
+    width:20%;
+    text-align:center;
+    margin-left: -30px;
+}
+
+.textePreview{
+    margin-top:10px;
+}
+
+.oeuvreImgColl{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+.oeuvreImgColl img{
+    width:20%;
+    border-radius: 2px;
+}
+
+.photoDroite, .photoGauche, .photoGauche2{
+    border-radius:3px;
+}
+
+.photoDroite{
+    float:right;
+    margin-left :20px;
+    width:30%;
+}
+
+.photoGauche, .photoGauche2{
+    float:left;
+    margin-right :20px;
+    width:40%;
+}
+
+.photoGauche2{
+    width:30%;
+}
+
+/* fin tout textes */
+
+#croix1,#croix2{
+    background-color:rgba(19, 18, 18, 0.918);
+    width:20px;
+    height:2px;
+    margin-left: 60px;
+    margin-top: 60px;
+    border-radius:20px;
+}
+
+#croix1{
+    transform:rotate(50deg);
+}
+
+#croix2{
+    transform:rotate(-50deg);
+    margin-top: -3px;
+}
+
+#cercle{
+    background-color:rgba(124, 33, 33, 0.918);
+    width:20px;
+    height:20px;
+    margin-top: 60px;
+    border-radius:50%;
+}
+
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {    
+    background-color: rgba(41, 37, 37, 0.479);
+    border-radius:20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Fin scroll bar */

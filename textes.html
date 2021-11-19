@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    <link href="header.css" rel="stylesheet">
+    <link href="header.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="dropdown">
+                <button type="button" onclick="goToAnnees()" id="dropdownMenuButton1">Oeuvres</button>
+                <button type="button" id="dropdownMenuButton1" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#per1">2010-2020</a></li>
+                    <li><a class="dropdown-item" href="#per2">2000-2010</a></li>
+                    <li><a class="dropdown-item" href="#per3">1990-2000</a></li>
+                    <li><a class="dropdown-item" href="#per4">1980-1990</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button type="button" style="font-weight:bold;" onclick="goToTextes()" id="dropdownMenuButton2">Textes explicatifs</button>
+                <button type="button" id="dropdownMenuButton2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#retable">Le Retable</a></li>
+                    <li><a class="dropdown-item" href="#epure">Epure et Figure</a></li>
+                    <li><a class="dropdown-item" href="#90">Années 90</a></li>
+                    <li><a class="dropdown-item" href="#travail">Travail, Fatigue</a></li>
+                </ul>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="bibliographie.html">Résumé bibliographique</a>
+            </li>
+        </div>
+    </header>
+
+    <!-- <div id="croix1"></div><div id="croix2"></div><div id=#cercle></div> -->
+
+    <div class="titre">Textes explicatifs</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <div id="selection">
+        <a href="#retable">Le Retable</a>
+        <a href="#epure">Epure et Figure</a>
+        <a href="#90">Années 90</a>
+        <a href="#travail">Travail Fatigue</a>
+    </div>
+
+    <div id="retable" class="oeuvre">
+        <div class="titreOeuvre">Le Retable</div>
+        <p>Le Retable est une figure emblématique de l’Art occidental du Moyen Age jusqu’au début du XVIIIe siècle. Le développement de la pensée des Lumières mettra progressivement un terme à cette forme de représentation de l’art en rapport au sacré. Il devient obsolète.</p>
+        <p>L'objet lui-même, aux dimensions souvent monumentales, situé dans des sanctuaires - chapelles, églises ou cathédrales - est savamment architecturé : menuiseries de bois dans lesquelles s’encastrent des panneaux de bois, peints ou sculptés. Son iconographie est, pour l’essentiel, inscrite dans le récit de la foi et de la pensée judéo-chrétienne, mais aussi dans les gestes et les comportements de la vie quotidienne qui structurent la société.</p>
+        <p>Je pense aux magnifiques Retables baroques catalans que je découvre au début des années 1990 à Prades, à Collioure mais aussi dans les petites chapelles de montagne. Ces retables laisseront une empreinte durable sur ma sensibilité.</p>
+        <p>Depuis 1996, je prends «l'objet retable» comme souci de mon travail. Je le retourne, je le renverse, je l’appréhende par le dessin, qui est aussi «dessein», et par la sculpture. Sa charpente en est le CUBE. Il devient le miroir de mes questionnements dans mon rapport au monde et aux catastrophes, tant individuelles que collectives, qui l’habitent. Il est confrontation à l’Histoire -histoire de l’Art- à l’héritage, au temps révolu, au temps présent, au futur qui inquiète. Il est une urgence.</p>
+        <p>Ainsi, je présente plusieurs réalisations sur le Cube et sa déconstruction, où le dessin sont étroitement articulés.</p>
+        <div class="oeuvreImg">
+            <img src="oeuvres/retable.png">
+            <p>Pièces détachées du Retable</p>
+            <p>Exposition Décalage Fondation Florence</p>
+            <p>Espace Commines Paris 3ème 2012.</p>
+        </div>
+        <div class="previewImg">
+            <img onclick="resizeImg2('./textes/retable1.png','./textes/retable2.png','retable')" src="./textes/retable1.png">
+            <div onclick="resizeImg2('./textes/retable1.png','./textes/retable2.png','retable')" class="textePreview">Cliquez ici pour voir l'original</div>
+        </div>
+    </div>
+
+    <div id="epure" class="oeuvre">
+        <div class="titreOeuvre">Epure et Figure</div>
+        <p>Une canne de berger sculptée, un barrage construit sur une rivière des Alpes, quel rapport exist-t-il entre ces deux éléments de TECHNOLOGIE?</p>
+        <p>C’est dans l’enfance que s'accumulent et s’entrechoquent les impressions contradictoires liées à la marche du temps. CONSTRUCTION et DECONSTRUCTION de L'ESPACE VISUEL et EMOTIONNEL, interrogation et perplexité devant un monde agro-pastoral perdu alors que j’en découvrais les résidus: OUTILS, ustensiles domestiques, machines abandonnées, mais aussi fascination devant les monumentales constructions hydrauliques qui bouleversaient la vie des hommes et transformaient radicalement le paysage alpin. LE BOIS était partout, dans les forêts, l’architecture, le mobilier, les instruments de travail.</p>
+        <p>Mes CONSTRUCTIONS réalisées à la fin des années 80 et au début des années 90 s’inspirent de ces sensations éprouvées dès l’enfance face aux cruelles MUTATIONS de l’histoire.</p>
+        <p>Les sculptures intitulées: "TRAVAIL ET FATIGUE", "FRAGMENT BARBARE" et "VARIATION" explorent la relation à l'OUTIL ARCHAIQUE.</p>
+        <p>"Fragment Barbare" et "Variation" sont des jouets / machines immobiles qui expriment de façon ludique tensions et mouvements contradictoires.</p>
+        <p>"TRAVAIL ET FATIGUE" évoquent l’outil agro-pastoral délaissé, OBJET insolite qui a perdu sens et contexte et nous parlent de la relation entre TRAVAIL / CORPS / VIE d’une part et FATIGUE / LASSITUDE / MORT d'autre part.</p>
+        <p>L'OUTIL OBSOLETE comme ARTEFACT questionne inévitablement le lien troublant qui existe entre ARCHAISME et MODERNITE. II m'interpelle sur le rôle tragique des MUTATIONS historiques et sur les convulsions sociales qui accompagnent ces mutations.</p>
+        <p>En 1996 je réalise une série de 24 dessins / projets à la mine de plomb, sur le CUBE et sa déconstruction que j'intitule: "Le CUBE HORS DE LUI." Je délaisse momentanément la relation plus directe, plus CORPORELLE à l’outil, pour explorer la FIGURE du cube plus abstraite, plus EPUREE. Je garde néanmoins le même souci dy materiau BOIS-- relation à la RURALITE --et je pratique le même jeu de construction par assemblage du bois et du métal. Le cube me préoccupe comme épure géométrique à l’opposé de la corporalité de l'outil. Il garde un caractère ludique-- JEU de cubes --et l’égalité de ses côtés me fascine. Il est aussi cette structure qui contraint et qu’il me faut contrarier. Je le vis comme une TENSION entre EQUILIBRE classique et EXUBERANCE baroque. Je le ressens non par sa masse, mais par ses arêtes dessinées dans l’espace INCORPORANT le vide "corps-creux." J'utilise des tasseaux de même dimension, seule varie la longueur de l’arête. J’obtiens ainsi des cubes aux structures plus massives ou plus allégée</p>
+        <p>Certaimfonctionnent dans la relation à la SURFACE du MUR, d’autres évoluent au SOL ou encore se posent sur un SOCLE dans un rapport plus intime avec l'observateur.</p>
+        <p>La combinaison des DECONSTRUCTIONS est MULTIPLE ainsi que le jeu des EQUILIBRES et DESEQUILIBRES. Je redécouvre chaque fois avec étonnement une nouvelle définition du développement de l’'OBJET ou FIGURE dans l’espace.</p>
+        <p>Mes DESSINS récents explorent la DECONSTRUCTION du Cube jusqu’à l'évidence de sa MISE à PLAT. J’ai réalisé huit planches / esquisses et un dessin / projet préparatoires à une prochaine réalisation. J’évolue soudain du développement de l’'OBJET dans l’'ESPACE vers son écrasement fatal dans le PLAN.</p>
+        <p>Si mes constructions interpelant l'OUTIL sont ressenties comme un prolongement de la FIGURE CORPORELLE, celles explorant le CUBE Figure - Epure évoquent un rapport plus intime au "dedans," au "Etre" et aux tensions et déconstructions qui préFIGURENT toute MUTATION.</p>
+        <p>LES PORTRAITS ... une autre relation à la FIGURE.</p>
+        <span class="droite">
+            <p>Joëlle Lionne</p>
+            <p>Octobre 2000</p>
+        </span>
+        <span class="gauche">
+            <p>Galerie Médiane</p>
+            <p>27, rue de l’Abbé Grégoire</p>
+            <p>75006 Paris</p>
+        </span>
+        <div class="previewImg">
+            <img onclick="resizeImg2('./textes/epure1.png','./textes/epure2.png','epure')" src="./textes/epure1.png">
+            <div onclick="resizeImg2('./textes/epure1.png','./textes/epure2.png','epure')" class="textePreview">Cliquez ici pour voir l'original</div>
+        </div>
+    </div>
+
+    <div id="90" class="oeuvre">
+        <div class="titreOeuvre">Années 90</div>
+        <p>J'ai commencé voilà douze ans mes premières constructions en bois. Au début, je me suis heurtée au bois en tant que masse statique. Je me suis mise alors à le transpercer, à contredire son immobilité, par un jeu d'assemblage dynamique. J’ai voulu ensuite extraire du bois massif, des structures plus allégées qui jouaient avec les notions d’instabilité de l’équilibre, de tension (tirer/pousser) et de mobilité dans l’espace.</p>
+        <p>En continuant d'explorer les limites du bois (échelle, rigidité, immobilité) j’ai fait intervenir un matériau radicalement différent : le métal. Ainsi j’ai pu travailler avec les notions d’enroulement, de souplesse, de flexibilité et de suspension, dans mes constructions. (Grand développement 1990, Inversion 1990).</p>
+        <p>Pourtant, je n’étais pas totalement satisfaite car c'est le bois, lui-même que je voulais assouplir, courber, contorsionner. J ’ai alors réalisé que les chutes abandonnées dans l’atelier (blocs ou planches découpés) pouvaient m'aider à résoudre le problème auquel je me heurtais. Il suffisait, à partir de fragments, de composer l’ensemble, le métal me servant à structurer les fragments entre eux. Le bois ainsi assemblé me permettait de dépasser les limites (échelle, rigidité, immobilité). Allégé, il se déployait sans contrainte et je pouvais élargir enfin le champ de mes explorations.</p>
+        <p>Voilà maintenant huït ans que je travaille selon ce principe de montage. J'utilise du bois brut (bois de chantier) préalablement découpé avec des formes et des angles précis d'assemblage. Je n’utilise aucune colle afin de garder souplesse et fluidité à mes constructions. (Sans titre 1992).</p>
+        <span class="droite">
+            <p>Joëlle LIONNE</p>
+            <p>Mars 1998</p>
+        </span>
+        <div class="previewImg">
+            <img onclick="resizeImg('./textes/90.png')" src="./textes/90.png">
+            <div onclick="resizeImg('./textes/90.png')" class="textePreview">Cliquez ici pour voir l'original</div>
+        </div>
+    </div>
+
+    <div id="travail" class="oeuvre">
+        <div class="titreOeuvre">Travail, Fatigue</div>
+        <div class="sousTitreTexte">Bois et Zinc - 120 centimètres de longueur</div>
+        <p>Des motifs immenses dont le mouvement est arrêté dans l’espace, des figures frustes et sans visage, dont les silhouettes anguleuses ont des accents cubistes. Les volumes deviennent de gigantesques personnages sur ossature bois. Ce qui passionne Joëlle LIONNE, ce qui fait le fil conducteur de son travail depuis une dizaine d’années, est ce rapport à la figure et les compositions qu’il peut susciter.</p>
+        <img class="photoDroite" src="oeuvres/travail1.png">
+        <p>La sculpture est ici dans ce moment d'élaboration quand la mise en scène n’est plus dans l’action même, mais justement dans une distance critique, de la réadaptation de a figure, lorsque l’oubli de l’anatomie précise du corps nous guide vers ce moment sublime de la réinterprétation.</p>
+        <p>Cette mise à distance permet de concevoir des images qui surgissent de toute évidence qui émergent et peuvent sembler insolites, tout en conservant une certaine cohérence qui réunit et accorde l’ensemble.</p>
+        <p>La forme instaure alors une relation très précise à la figure. Les sculptures, résultat de cette démarche, sont constituées des matériaux placés à l’intérieur d'une forme géométrique de telle sorte que chaque élément soit à proximité d'un autre élément créant une présence d’une puissante uniformité.</p>
+        <img class="photoGauche" src="oeuvres/travail2.png">
+        <p>Les sculptures se réalisent dans un espace physique auquel Joëlle LIONNE accède facilement. Quand elle travaille, ses mains s’inscrivent sur toutes les parties de la surface sans aucune difficulté. Bois coupé, taillé, cloué, assemblé. Une relation naturelle existe entre sa main et les proportions de l’œuvre finale.</p>
+        <p>Mais quand le format des sculptures se constitue, elle n’y travaille plus de la même façon, obligée de tourner autour. Cette circulation physique nécessaire provoque une prise de distance et pose une vision plus élaborée. Elle incite à un mode de création moins immédiat, plus complexe qui du dessin préparatoire ira jusqu'au vertige de l’équilibre final.</p>
+        <p>Convient-il de la prendre à la lettre lorsque Joëlle LIONNE avance qu’elle concrétise son travail quand elle se met à sculpter ? Joëlle LIONNE convoque ici PAVESE par la référence directe à l’un de ses recueils de poésie : "Travailler,fatigue" qui deviendra par la suite le titre d’une de ses œuvres les plus emblématiques de ces dernières années.</p>
+        <img class="photoDroite" src="oeuvres/travail4.png">
+        <p>De la même manière, il ne faudrait pas prendre les convictions de Joëlle LIONNE pour des bribes de discours qui viendraient envelopper un travail pour le finir et le commenter. Il s’agit bien au contraire d’un projet qui fonde une manière de faire.</p>
+        <p>Qu'elle convoque le concept de beauté fait office de provocation mais trouve sa cohérence dans l’utilisation qu’elle en fait : une recherche de la forme absolue et non pas l'énoncé de sa description.</p>
+        <p>La quête est immense et exigeante, l’œuvre tend vers l'unité silencieuse, là où les conflits sont imminents mais endigués en de fortes tensions et en des corps à corps éperdus.</p>
+        <p>La forme des sculptures renvoie à notre effort pathétique d'équilibre. Son œuvre est sous entendue par cette fatalité de l’échec et cette évocation discrète de la catastrophe.</p>
+        <img class="photoGauche2" src="oeuvres/travail3.png">
+        <p>Peut-être que le sujet ultime de l’œuvre réside dans cette indifférence absolue du monde aux catastrophes de la pesanteur, tragédie à laquelle elle feint de remédier par la construction de béquilles, de prothèses qui portent dans leur structure même la trace de catastrophes à venir.</p>
+        <p>Pour Joëlle LIONNE la pratique de la sculpture semble s'inscrire dans le prolongement des mouvements qui ont pris naissance dans les années 70. comme l’art pauvre. Mais sa démarche est, en réalité, indépendante, impropre aux regroupements conceptuels, essentiellement marquée par un retour aux sources. Joëlle Lionne dote ses matériaux d'une intense charge émotionelle; aussi trouve-t-on de nombreuses références à l'art primitif dans ses dessins comme dans ses sculptures.</p>
+        <p>La sculpture est chose précieuse. La plus précieuse d'un sculpteur, comment ne pas comprendre qe Joêlle LIONNE désire, vénérant le geste matériel de la sculpture, l'entourer, la recouvrir, et la protéger.</p>
+        <span class="droite">
+            <p>Yves-Michel BERNARD</p>
+            <p>Paris, Juin, 1996</p>
+        </span>
+        <div class="previewImg">
+            <img onclick="resizeImg2('./textes/travail1.png','./textes/travail2.png','travail')" src="./textes/travail1.png">
+            <div onclick="resizeImg2('./textes/travail1.png','./textes/travail2.png','travail')" class="textePreview">Cliquez ici pour voir l'original</div>
+        </div>
+    </div>
+</body>
+</html>
