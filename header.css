@@ -12,7 +12,10 @@
     font-weight:bold;
     color:white;
     border-color: transparent;
-    
+}
+
+.dropdown{
+    margin-top:2px;
 }
 
 header{
@@ -51,7 +54,14 @@ footer div{
     width: fit-content;
 }
 
-.titre{
+.btn-check:focus+.btn-danger, .btn-danger:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.titre, .soustitre{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -61,19 +71,37 @@ footer div{
     margin-top: 60px;
 }
 
-/* années */
-
-.periode{
-    margin:20px;
-    font-size: 16px;
-    font-weight: 100;
+#collapseOne{
+    margin-top:20px;
 }
 
-.periode:first-child{
-    margin-top:50px;
+.accordion-header:active{
+    background-color:transparent;
+    box-shadow: 0 0 0 0 transparent;
 }
 
-/* fin années */
+.accordion-button:not(.collapsed){
+    color:black;
+    background-color:transparent;
+}
+
+.accordion-button:focus{
+    box-shadow:0 0 0 0 transparent;
+}
+
+.accordion-item{
+    width:80%;
+    display: block;
+    margin: auto;
+    border: 0px solid black;
+}
+
+.soustitre{
+    font-size: 20px;
+    font-style: italic;
+    margin-top:-10px;
+    margin-bottom:40px;
+}
 
 /* bibliographie */
 
@@ -246,33 +274,6 @@ footer div{
 
 /* fin tout textes */
 
-#croix1,#croix2{
-    background-color:rgba(19, 18, 18, 0.918);
-    width:20px;
-    height:2px;
-    margin-left: 60px;
-    margin-top: 60px;
-    border-radius:20px;
-}
-
-#croix1{
-    transform:rotate(50deg);
-}
-
-#croix2{
-    transform:rotate(-50deg);
-    margin-top: -3px;
-}
-
-#cercle{
-    background-color:rgba(124, 33, 33, 0.918);
-    width:20px;
-    height:20px;
-    margin-top: 60px;
-    border-radius:50%;
-}
-
-
 /* Scroll bar */
 
 ::-webkit-scrollbar {
@@ -288,7 +289,6 @@ footer div{
 ::-webkit-scrollbar-thumb {    
     background-color: rgba(41, 37, 37, 0.479);
     border-radius:20px;
-
 }
 
 /* Handle on hover */
