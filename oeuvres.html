@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="header.css" rel="stylesheet">
+    <link href="oeuvres.css" rel="stylesheet">
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <div class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="galerie.html">Galerie de photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="font-weight:bold;" href="oeuvres.html">Oeuvres</a>
+            </li>
+            <div class="dropdown">
+                <button type="button" onclick="goToTextes()" id="dropdownMenuButton2">Textes explicatifs</button>
+                <button type="button" id="dropdownMenuButton2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#txt1">Le Retable</a></li>
+                    <li><a class="dropdown-item" href="#txt2">Epure et Figure</a></li>
+                    <li><a class="dropdown-item" href="#txt3">Années 90</a></li>
+                    <li><a class="dropdown-item" href="#txt3">Travail, Fatigue</a></li>
+                </ul>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="bibliographie.html">Résumé bibliographique</a>
+            </li>
+        </div>
+    </header>
+
+    <div class="titre" style="margin-bottom: 50px; margin-top: 80px;">Oeuvres</div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Voir la liste des oeuvres</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="selection">
+                    <a href="#chaos">Chaos</a>
+                    <a href="#corpsconst">Corps constellation</a>
+                    <a href="#motscorps">Mots corps côte à côte</a>
+                    <a href="#grandedef">Grande déflagration</a>
+                    <a href="#miseaplat">Mise à plat</a>
+                </div>
+                <div id="selection">
+                    <a href="#miseaplatmorphe">Mise à plat avec morphe</a>
+                    <a href="#miseaplatlaby">Mise à plat du cube et ses labyrithes</a>
+                    <a href="#tension">Tension</a>
+                    <a href="#cubehors">Le cube hors de lui</a>
+                </div>
+                <div id="selection">
+                    <a href="#variation">Variation</a>
+                    <a href="#dev">Développement</a>
+                    <a href="#paralelle">Paralèlle</a>
+                    <a href="#debout">Debout devant l'éternité</a>
+                    <a href="#steman">Rétrospective 100 ans de travail</a>
+                </div>
+                <div id="selection">
+                    <a href="#fontaine">Fontaine</a>
+                    <a href="#flanc">Petite tension posée sur son flanc</a>
+                    <a href="#boisContre">Bois et contreplaqué</a>
+                    <a href="#entrelas">Entrelas</a>
+                    <a href="#etretat">Etretat</a>
+                </div>
+                <div id="selection">
+                    <a href="#mater">Maternité</a>
+                    <a href="#figue">Figue</a>
+                    <a href="#miseaplatcube">Mise à plat du cube</a>
+                    <a href="#trypdef">Tryptique déflagration</a>
+                    <a href="#grandetension">Grande tension</a>
+                </div>        
+            </div>
+        </div>
+    </div>
+      
+    <div class="content">
+
+        <!-- Chaos -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">2020 - 2021</div>
+            <div style="width:75%" class="trait2"></div>
+        </div>
+        <div id="chaos" class="oeuvreEtDesc">
+            <div class="nom">Chaos</div>
+            <div class="detail">31/05/2021 - 04/07/2021</div>
+            <div class="detail">Pierre noire</div>
+            <div class="detail">150x150 centimètres</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/chaos20211.jpg">
+                <img class="imgOeuvres" src="oeuvres/chaos.jpg">
+                <img class="imgOeuvres" src="oeuvres/chaos9.jpg">
+            </div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/chaos5.jpg">
+                <img class="imgOeuvres" src="oeuvres/chaos6.jpg">
+                <img class="imgOeuvres" src="oeuvres/chaos8.jpg">
+            </div>
+        </div>
+
+        <!-- Corps constellation -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">2017</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="selection">
+            <div id="corpsconst" class="oeuvreEtDesc">
+                <div style="margin-left: 70px;" class="nom">Corps constellation</div>
+                <div style="margin-left: 70px;" class="detail">Pierre noire</div>
+                <div style="margin-left: 70px;" class="detail">200x100 centimètres au sol</div>
+                <div class="ligneImg">
+                    <img style="width:70%" class="imgOeuvres" src="oeuvres/corpsconst.jpg">
+                </div>
+            </div>
+            <!-- Mots corps côte à côte -->
+            <div id="motscorps" class="oeuvreEtDesc">
+                <div style="margin-left: 70px;" class="nom">Mots corps côte à côte</div>
+                <div style="margin-left: 70px;" class="detail">Pierre noire</div>
+                <div style="margin-left: 70px;" class="detail">200x100 centimètres au sol</div>
+                <div class="ligneImg">
+                    <img style="width:70%" class="imgOeuvres" src="oeuvres/motscorps.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Grande déflagration -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">2014</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="grandedef" class="oeuvreEtDesc">
+            <div class="nom">Grande déflagration</div>
+            <div class="detail">Papier kraft et mine de plomb</div>
+            <div class="detail">500x500 centimètres au sol</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/grandedef1.jpg">
+                <img class="imgOeuvres" src="oeuvres/grandedef2.jpg">
+            </div>
+        </div>
+
+        <!-- Mise à plat -->
+        <div id="miseaplat" class="oeuvreEtDesc">
+            <div class="nom">Mise à plat</div>
+            <div class="detail">Bois, clou et zinc</div>
+            <div class="detail">230x110 centimètres au sol</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/miseaplat2.jpg">
+                <img class="imgOeuvres" src="oeuvres/miseaplat3.jpg">
+            </div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/miseaplat1.jpg">
+                <img class="imgOeuvres" src="oeuvres/miseaplat4.jpg">
+            </div>
+        </div>
+
+        <!-- Mise à plat avec morphe -->
+        <div id="miseaplatmorphe" class="oeuvreEtDesc">
+            <div class="nom">Mise à plat avec morphe</div>
+            <div class="detail">Mine de plomb</div>
+            <div class="detail">150x230 centimètres</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/miseaplatmorphe.jpg">
+            </div>
+        </div>
+
+        <!--Mise à plat du cube et ses labyrithes-->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">2011</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="miseaplatlaby" class="oeuvreEtDesc">
+            <div class="nom">Mise à plat du cube et ses labyrithes</div>
+            <div class="detail">Sculpture de carton et dessin mine de plomb correspondant</div>
+            <div class="detail">56x75 centimètres</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/miseaplatlaby.jpg">
+            </div>
+        </div>
+
+        <!-- Le cube hors de lui -->
+
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1998</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="tension" class="oeuvreEtDesc">
+            <div class="nom">Le cube hors de lui</div>
+            <div class="detail">Bois et zinc</div>
+            <div class="detail">30 centimètres</div>
+            <div class="detail">Cube XXI arrête</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui1.jpg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui2.jpg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui3.jpg">
+            </div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui4.jpg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui5.jpg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui6.jpg">
+            </div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui7.jpg">
+                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui8.jpg">
+            </div>
+        </div>
+
+        <!-- Rétrospective -->
+        <div id="steman" class="oeuvreEtDesc">
+            <div class="nom">Rétrospective 100 ans de travail</div>
+            <div class="detail">Chapelle Saint Eman, Chartres</div>
+            <div class="detail">Exposition personelle</div>
+            <div class="ligneImg">
+                <img style="width:50%" class="imgOeuvres" src="oeuvres/steman.jpg">
+            </div>
+        </div>
+
+        <!-- Variations -->
+
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1996</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="variation" class="oeuvreEtDesc">
+            <div class="nom">Variation</div>
+            <div class="detail">Exposition en 1998</div>
+            <div class="detail">Bois et zinc</div>
+            <div class="detail">300x220 centimètres</div>
+            <div>
+                <img class="imgG" src="oeuvres/variation98.jpg">
+                <blockquote>"Des motifs immenses dont le mouvement est arrêté dans l'espace, des figures frustres et sans visage, dont les silouhettes anguleuses ont des accents cubistes. Ls volumes deviennent de gigantesques personnages sur ossature bois. Ce qui passionne Joêlle Lionne, ce qui fait le fil conducteur de son travail depuis une dizainne d'années, est ce rapport à la figure et les compositions qu'il peut susciter..."</blockquote>
+            </div>
+        </div>
+
+        <!-- Dev -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1989</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="dev" class="oeuvreEtDesc">
+            <div class="nom">Développement</div>
+            <div class="detail">Acier et bois</div>
+            <div class="detail">85x50x30 centimètres</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/dev.jpg">
+                <img class="imgOeuvres" src="oeuvres/dev2.jpg">
+                <img class="imgOeuvres" src="oeuvres/dev3.jpg">
+            </div>
+        </div>
+
+         <!-- Paralèlle -->
+         <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1988</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="paralelle" class="oeuvreEtDesc">
+            <div class="nom">Paralèlle</div>
+            <div class="detail">Bois</div>
+            <div class="detail">2m50 de hauteur</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/paralelle.jpg">
+                <img class="imgOeuvres" src="oeuvres/parallele2.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 8 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1987</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="paralelle" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="detail">Bois</div>
+            <div class="detail">45 centimètres de hauteur</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST8_1.jpg">
+            </div>
+        </div>
+
+        <!-- Figue -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1982</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="figue" class="oeuvreEtDesc">
+            <div class="nom">Figue</div>
+            <div class="detail">Plâtre</div>
+            <div class="detail">1m20 de hauteur</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/figue.jpg">
+            </div>
+        </div>
+
+         <!-- Maternité -->
+         <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">1981</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="mater" class="oeuvreEtDesc">
+            <div class="nom">Maternité</div>
+            <div class="detail">Exposé le 20 juin et 9 juillet 1981 à la Weston Press Galery, New York</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/mater.jpg">
+            </div>
+        </div>
+
+        <!--Mise à plat du cube-->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="miseaplatcube" class="oeuvreEtDesc">
+            <div class="nom">Mise à plat du cube</div>
+            <div class="detail">Pierre noire</div>
+            <div class="detail">200x200 centimètres</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/miseaplatcube.jpg">
+            </div>
+        </div>
+
+        <!-- Tryptique déflagration -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="trypdef" class="oeuvreEtDesc">
+            <div class="nom">Tryptique déflagration</div>
+            <div class="detail">Mine de plomb et pierre noire</div>
+            <div class="ligneImg">
+                <img style="width:50%" class="imgOeuvres" src="oeuvres/trypdef.jpg">
+            </div>
+        </div>
+
+        <!-- Tension -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="tension" class="oeuvreEtDesc">
+            <div class="nom">Tension</div>
+            <div class="detail">Bois et métal</div>
+            <div class="detail">200 centimètres de hauteur</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/tension1.jpg">
+                <img class="imgOeuvres" src="oeuvres/tension2.jpg">
+            </div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/tension3.jpg">
+                <img class="imgOeuvres" src="oeuvres/tension4.jpg">
+            </div>
+        </div>
+
+
+        <!-- Fontaine -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="fontaine" class="oeuvreEtDesc">
+            <div class="nom">Fontaine</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/fontaine1.jpg">
+                <img class="imgOeuvres" src="oeuvres/fontaine2.jpg">
+                <img class="imgOeuvres" src="oeuvres/fontaine3.jpg">
+            </div>
+        </div>
+
+        <!-- Debout devant l'éternité -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="debout" class="oeuvreEtDesc">
+            <div class="nom">Debout devant l'éternité</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/debout1.jpg">
+                <img class="imgOeuvres" src="oeuvres/debout2.jpg">
+            </div>
+        </div>
+
+        <!-- Petite tension posée sur son flanc -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="flanc" class="oeuvreEtDesc">
+            <div class="nom">Petite tension posée sur son flanc</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/flanc.jpg">
+                <img class="imgOeuvres" src="oeuvres/flanc2.jpg">
+            </div>
+        </div>
+
+        <!-- Bois et contreplaqué -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="boisContre" class="oeuvreEtDesc">
+            <div class="nom">Bois et contreplaqué</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/boisContre.jpg">
+            </div>
+        </div>
+
+        <!-- Entrelas -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="entrelas" class="oeuvreEtDesc">
+            <div class="nom">Entrelas</div>
+            <div class="detail">2m10 de hauteur</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/entrelas.jpg">
+            </div>
+        </div>
+
+        <!-- Etretat -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="etretat" class="oeuvreEtDesc">
+            <div class="nom">Etretat</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/etretat.jpg">
+                <img class="imgOeuvres" src="oeuvres/etretat2.jpg">
+            </div>
+        </div>
+
+        <!-- Grande tension -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="grandetension" class="oeuvreEtDesc">
+            <div class="nom">Grande tension</div>
+            <div class="detail">2m10 de hauteur</div>
+            <div class="detail">Haut bois et acier</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/grandetension.jpg">
+                <img class="imgOeuvres" src="oeuvres/grandetension2.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 1 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st1" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST1_1.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST1_2.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST1_3.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 2 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st2" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST2_1.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST2_2.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST2_3.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 3 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st3" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="detail">Bois et zinc</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST3_1.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST3_2.jpg">
+            </div>
+            <div class="ligneImg">     
+                <img class="imgOeuvres" src="oeuvres/ST3_3.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST3_4.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST3_5.jpg">
+            </div>
+            <div class="ligneImg">     
+                <img class="imgOeuvres" src="oeuvres/ST3_7.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST3_8.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 4 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st4" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST4_1.jpg">           
+                <img class="imgOeuvres" src="oeuvres/ST4_2.jpg">           
+            </div>
+        </div>
+
+        <!-- Sans titre 5 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st5" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="detail">2m50 de hauteur</div>
+            <div class="ligneImg">
+                <img style="width:20%" class="imgOeuvres" src="oeuvres/ST5_1.jpg">
+                <img style="width:20%" class="imgOeuvres" src="oeuvres/ST5_2.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 6 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st6" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST6_1.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST6_2.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 7 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st7" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST7_1.jpg">
+                <img class="imgOeuvres" src="oeuvres/ST7_2.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 9 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st9" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST9.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 10 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st10" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST10.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 11 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st11" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST11.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 12 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st12" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST12.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 13 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st13" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST13.jpg">
+            </div>
+        </div>
+
+        <!-- Sans titre 14 -->
+        <div class="ban">
+            <div class="trait1"></div>
+            <div class="annee">?</div>
+            <div class="trait2"></div>
+        </div>
+        <div id="st14" class="oeuvreEtDesc">
+            <div class="nom">Sans titre</div>
+            <div class="ligneImg">
+                <img class="imgOeuvres" src="oeuvres/ST14.jpg">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>Element</div>
+        <div>Element</div>
+        <div>Element</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

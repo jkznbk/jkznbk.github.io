@@ -12,23 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/554378e727.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="nav">
-            <div class="dropdown">
-                <button type="button" onclick="goToAnnees()" id="dropdownMenuButton1">Oeuvres</button>
-                <button type="button" id="dropdownMenuButton1" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#per1">2010-2020</a></li>
-                    <li><a class="dropdown-item" href="#per2">2000-2010</a></li>
-                    <li><a class="dropdown-item" href="#per3">1990-2000</a></li>
-                    <li><a class="dropdown-item" href="#per4">1980-1990</a></li>
-                </ul>
-            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="galerie.html">Galerie de photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="font-weight:bold;" href="oeuvres.html">Oeuvres</a>
+            </li>
             <div class="dropdown">
                 <button type="button" style="font-weight:bold;" onclick="goToTextes()" id="dropdownMenuButton2">Textes explicatifs</button>
                 <button type="button" id="dropdownMenuButton2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,8 +41,6 @@
             </li>
         </div>
     </header>
-
-    <!-- <div id="croix1"></div><div id="croix2"></div><div id=#cercle></div> -->
 
     <div class="titre">Textes explicatifs</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
@@ -67,14 +60,14 @@
         <p>Depuis 1996, je prends «l'objet retable» comme souci de mon travail. Je le retourne, je le renverse, je l’appréhende par le dessin, qui est aussi «dessein», et par la sculpture. Sa charpente en est le CUBE. Il devient le miroir de mes questionnements dans mon rapport au monde et aux catastrophes, tant individuelles que collectives, qui l’habitent. Il est confrontation à l’Histoire -histoire de l’Art- à l’héritage, au temps révolu, au temps présent, au futur qui inquiète. Il est une urgence.</p>
         <p>Ainsi, je présente plusieurs réalisations sur le Cube et sa déconstruction, où le dessin sont étroitement articulés.</p>
         <div class="oeuvreImg">
-            <img src="oeuvres/retable.png">
+            <img src="oeuvres/retable.jpg">
             <p>Pièces détachées du Retable</p>
             <p>Exposition Décalage Fondation Florence</p>
             <p>Espace Commines Paris 3ème 2012.</p>
         </div>
         <div class="previewImg">
-            <img onclick="resizeImg2('./textes/retable1.png','./textes/retable2.png','retable')" src="./textes/retable1.png">
-            <div onclick="resizeImg2('./textes/retable1.png','./textes/retable2.png','retable')" class="textePreview">Cliquez ici pour voir l'original</div>
+            <img onclick="resizeImg2('./textes/retable1.jpg','./textes/retable2.jpg','retable')" src="./textes/retable1.jpg">
+            <div onclick="resizeImg2('./textes/retable1.jpg','./textes/retable2.jpg','retable')" class="textePreview">Cliquez ici pour voir l'original</div>
         </div>
     </div>
 
@@ -103,8 +96,8 @@
             <p>75006 Paris</p>
         </span>
         <div class="previewImg">
-            <img onclick="resizeImg2('./textes/epure1.png','./textes/epure2.png','epure')" src="./textes/epure1.png">
-            <div onclick="resizeImg2('./textes/epure1.png','./textes/epure2.png','epure')" class="textePreview">Cliquez ici pour voir l'original</div>
+            <img onclick="resizeImg2('./textes/epure1.jpg','./textes/epure2.jpg','epure')" src="./textes/epure1.jpg">
+            <div onclick="resizeImg2('./textes/epure1.jpg','./textes/epure2.jpg','epure')" class="textePreview">Cliquez ici pour voir l'original</div>
         </div>
     </div>
 
@@ -119,8 +112,8 @@
             <p>Mars 1998</p>
         </span>
         <div class="previewImg">
-            <img onclick="resizeImg('./textes/90.png')" src="./textes/90.png">
-            <div onclick="resizeImg('./textes/90.png')" class="textePreview">Cliquez ici pour voir l'original</div>
+            <img onclick="resizeImg('./textes/90.jpg','90')" src="./textes/90.jpg">
+            <div onclick="resizeImg('./textes/90.jpg','90')" class="textePreview">Cliquez ici pour voir l'original</div>
         </div>
     </div>
 
@@ -128,20 +121,20 @@
         <div class="titreOeuvre">Travail, Fatigue</div>
         <div class="sousTitreTexte">Bois et Zinc - 120 centimètres de longueur</div>
         <p>Des motifs immenses dont le mouvement est arrêté dans l’espace, des figures frustes et sans visage, dont les silhouettes anguleuses ont des accents cubistes. Les volumes deviennent de gigantesques personnages sur ossature bois. Ce qui passionne Joëlle LIONNE, ce qui fait le fil conducteur de son travail depuis une dizaine d’années, est ce rapport à la figure et les compositions qu’il peut susciter.</p>
-        <img class="photoDroite" src="oeuvres/travail1.png">
+        <img class="photoDroite" src="oeuvres/travail1.jpg">
         <p>La sculpture est ici dans ce moment d'élaboration quand la mise en scène n’est plus dans l’action même, mais justement dans une distance critique, de la réadaptation de a figure, lorsque l’oubli de l’anatomie précise du corps nous guide vers ce moment sublime de la réinterprétation.</p>
         <p>Cette mise à distance permet de concevoir des images qui surgissent de toute évidence qui émergent et peuvent sembler insolites, tout en conservant une certaine cohérence qui réunit et accorde l’ensemble.</p>
         <p>La forme instaure alors une relation très précise à la figure. Les sculptures, résultat de cette démarche, sont constituées des matériaux placés à l’intérieur d'une forme géométrique de telle sorte que chaque élément soit à proximité d'un autre élément créant une présence d’une puissante uniformité.</p>
-        <img class="photoGauche" src="oeuvres/travail2.png">
+        <img class="photoGauche" src="oeuvres/travail2.jpg">
         <p>Les sculptures se réalisent dans un espace physique auquel Joëlle LIONNE accède facilement. Quand elle travaille, ses mains s’inscrivent sur toutes les parties de la surface sans aucune difficulté. Bois coupé, taillé, cloué, assemblé. Une relation naturelle existe entre sa main et les proportions de l’œuvre finale.</p>
         <p>Mais quand le format des sculptures se constitue, elle n’y travaille plus de la même façon, obligée de tourner autour. Cette circulation physique nécessaire provoque une prise de distance et pose une vision plus élaborée. Elle incite à un mode de création moins immédiat, plus complexe qui du dessin préparatoire ira jusqu'au vertige de l’équilibre final.</p>
         <p>Convient-il de la prendre à la lettre lorsque Joëlle LIONNE avance qu’elle concrétise son travail quand elle se met à sculpter ? Joëlle LIONNE convoque ici PAVESE par la référence directe à l’un de ses recueils de poésie : "Travailler,fatigue" qui deviendra par la suite le titre d’une de ses œuvres les plus emblématiques de ces dernières années.</p>
-        <img class="photoDroite" src="oeuvres/travail4.png">
+        <img class="photoDroite" src="oeuvres/travail4.jpg">
         <p>De la même manière, il ne faudrait pas prendre les convictions de Joëlle LIONNE pour des bribes de discours qui viendraient envelopper un travail pour le finir et le commenter. Il s’agit bien au contraire d’un projet qui fonde une manière de faire.</p>
         <p>Qu'elle convoque le concept de beauté fait office de provocation mais trouve sa cohérence dans l’utilisation qu’elle en fait : une recherche de la forme absolue et non pas l'énoncé de sa description.</p>
         <p>La quête est immense et exigeante, l’œuvre tend vers l'unité silencieuse, là où les conflits sont imminents mais endigués en de fortes tensions et en des corps à corps éperdus.</p>
         <p>La forme des sculptures renvoie à notre effort pathétique d'équilibre. Son œuvre est sous entendue par cette fatalité de l’échec et cette évocation discrète de la catastrophe.</p>
-        <img class="photoGauche2" src="oeuvres/travail3.png">
+        <img class="photoGauche2" src="oeuvres/travail3.jpg">
         <p>Peut-être que le sujet ultime de l’œuvre réside dans cette indifférence absolue du monde aux catastrophes de la pesanteur, tragédie à laquelle elle feint de remédier par la construction de béquilles, de prothèses qui portent dans leur structure même la trace de catastrophes à venir.</p>
         <p>Pour Joëlle LIONNE la pratique de la sculpture semble s'inscrire dans le prolongement des mouvements qui ont pris naissance dans les années 70. comme l’art pauvre. Mais sa démarche est, en réalité, indépendante, impropre aux regroupements conceptuels, essentiellement marquée par un retour aux sources. Joëlle Lionne dote ses matériaux d'une intense charge émotionelle; aussi trouve-t-on de nombreuses références à l'art primitif dans ses dessins comme dans ses sculptures.</p>
         <p>La sculpture est chose précieuse. La plus précieuse d'un sculpteur, comment ne pas comprendre qe Joêlle LIONNE désire, vénérant le geste matériel de la sculpture, l'entourer, la recouvrir, et la protéger.</p>
@@ -150,8 +143,8 @@
             <p>Paris, Juin, 1996</p>
         </span>
         <div class="previewImg">
-            <img onclick="resizeImg2('./textes/travail1.png','./textes/travail2.png','travail')" src="./textes/travail1.png">
-            <div onclick="resizeImg2('./textes/travail1.png','./textes/travail2.png','travail')" class="textePreview">Cliquez ici pour voir l'original</div>
+            <img onclick="resizeImg2('./textes/travail1.jpg','./textes/travail2.jpg','travail')" src="./textes/travail1.jpg">
+            <div onclick="resizeImg2('./textes/travail1.jpg','./textes/travail2.jpg','travail')" class="textePreview">Cliquez ici pour voir l'original</div>
         </div>
     </div>
 </body>
