@@ -1,90 +1,91 @@
-.imgOeuvres{
-    width:30%;
-    margin:5px;
+.imgOeuvres {
+  width: 30%;
+  margin: 5px;
 }
 
-.annee{
-    font-size: 20px;
-    margin-left: 20px;
+.annee {
+  font-size: 20px;
+  margin-left: 20px;
 }
 
-.oeuvreEtDesc{
-    margin-top: 20px;
-    margin-bottom: 40px;
+.oeuvreEtDesc {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.oeuvreEtDesc .nom{
-    margin-bottom: 20px;
-    font-size:30px;
-    margin-left: 10%;
+.oeuvreEtDesc .nom {
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-left: 10%;
 }
 
-.oeuvreEtDesc img{
-    border-radius:3px
+.oeuvreEtDesc img {
+  border-radius: 3px;
 }
 
-.trait1{
-    width:5%;
-    height:1px;
-    background-color: rgba(61, 59, 56, 0.514);
-    margin-top: 15px;
-    margin-left: 20px;
+.trait1 {
+  width: 5%;
+  height: 1px;
+  background-color: rgba(61, 59, 56, 0.514);
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
-.trait2{
-    width:85%;
-    height:1px;
-    background-color: rgba(61, 59, 56, 0.514);
-    margin-top: 15px;
-    margin-left: 20px;
+.trait2 {
+  width: 85%;
+  height: 1px;
+  background-color: rgba(61, 59, 56, 0.514);
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
-.ban{
-    display:flex;
-    justify-content:flex;
+.ban {
+  display: flex;
+  justify-content: flex;
 }
 
-.ban:first-child{
-    margin-top:50px;
+.ban:first-child {
+  margin-top: 50px;
 }
 
-.detail, blockquote{
-    margin-bottom: 20px;
-    font-size:25px;
-    margin-top:-20px;
-    font-style: italic;
-    font-size:13px;
-    letter-spacing: 3px;
-    margin-left: 10%;
+.detail,
+blockquote {
+  margin-bottom: 20px;
+  font-size: 25px;
+  margin-top: -20px;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-left: 10%;
 }
 
-blockquote{
-    font-style: normal;
-    margin-top:30px;
-    text-align: center;
-    width: 90%;
-    padding-top: 40px;
+blockquote {
+  font-style: normal;
+  margin-top: 30px;
+  text-align: center;
+  width: 90%;
+  padding-top: 40px;
 }
 
-.ligneImg{
-    display:flex;
-    justify-content:center;
+.ligneImg {
+  display: flex;
+  justify-content: center;
 }
 
-.content{
-    width: 80%;
-    display: block;
-    margin: auto;
+.content {
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
-.imgG{
-    float:left;
-    width:30%;
-    margin-right:20px;
-    margin-bottom: 40px;
-    margin-left: 10%;
+.imgG {
+  float: left;
+  width: 30%;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-left: 10%;
 }
 
-.ban{
-    clear: both;
+.ban {
+  clear: both;
 }

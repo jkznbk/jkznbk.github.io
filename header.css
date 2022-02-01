@@ -1,275 +1,316 @@
-*{
-    font-family: Montserrat;
+* {
+  font-family: Montserrat;
 }
 
-#dropdownMenuButton1, #dropdownMenuButton2{
-    background-color:transparent;
-    border:0px solid black;
-    color : white;
+#dropdownMenuButton1,
+#dropdownMenuButton2 {
+  background-color: transparent;
+  border: 0px solid black;
+  color: white;
 }
 
-#dropdownMenuButton1:hover, .nav-link:hover, #dropdownMenuButton2:hover{
-    font-weight:bold;
-    color:white;
-    border-color: transparent;
+#dropdownMenuButton1:hover,
+.nav-link:hover,
+#dropdownMenuButton2:hover {
+  font-weight: bold;
+  color: white;
+  border-color: transparent;
 }
 
-.dropdown{
-    margin-top:2px;
+.dropdown {
+  margin-top: 2px;
 }
 
-header{
-    background-color: rgb(24, 23, 23);
-    position:fixed;
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
+.navS {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 1;
 }
 
-footer{
-    background-color: rgb(24, 23, 23);
-    bottom:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    color:white;
+.navS a {
+  font-size: 25px;
 }
 
-footer div{
-    margin-left: 10px;
-    margin-right: 10px;
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-#dropdownMenuButton1:first-child, #dropdownMenuButton2:first-child{
-    margin-top: 5px;
+@media screen and (min-width: 700px) {
+  .navS {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-.nav-link{
-    color:white;
+header {
+  background-color: rgb(24, 23, 23);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.dropdown-menu{
-    border:0px solid black;
-    width: fit-content;
+footer {
+  background-color: rgb(24, 23, 23);
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
-.btn-check:focus+.btn-danger, .btn-danger:focus {
-    color: #fff;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: 0 0 0 0 transparent;
+footer div {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.titre, .soustitre{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    font-size: 30px;
-    font-weight: 200;
-    margin-top: 60px;
+#dropdownMenuButton1:first-child,
+#dropdownMenuButton2:first-child {
+  margin-top: 5px;
 }
 
-#collapseOne{
-    margin-top:20px;
+.nav-link {
+  color: white;
 }
 
-.accordion-header:active{
-    background-color:transparent;
-    box-shadow: 0 0 0 0 transparent;
+.dropdown-menu {
+  border: 0px solid black;
+  width: fit-content;
 }
 
-.accordion-button:not(.collapsed){
-    color:black;
-    background-color:transparent;
+.btn-check:focus + .btn-danger,
+.btn-danger:focus {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
 }
 
-.accordion-button:focus{
-    box-shadow:0 0 0 0 transparent;
+.titre,
+.soustitre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 60px;
 }
 
-.accordion-item{
-    width:80%;
-    display: block;
-    margin: auto;
-    border: 0px solid black;
+#collapseOne {
+  margin-top: 20px;
 }
 
-.soustitre{
-    font-size: 20px;
-    font-style: italic;
-    margin-top:-10px;
-    margin-bottom:40px;
+@media screen and (max-width: 600px) {
+  .accordion {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.accordion-header:active {
+  background-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.accordion-item {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border: 0px solid black;
+}
+
+.soustitre {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 40px;
 }
 
 /* bibliographie */
 
-.bibliographie{
-    width:70%;
-    display:block;
-    margin: auto;
+.bibliographie {
+  width: 70%;
+  display: block;
+  margin: auto;
 }
 
-.bibliographie li{
-    list-style-type:circle;
-    text-indent:30px;
+.bibliographie li {
+  list-style-type: circle;
+  text-indent: 30px;
 }
 
-.bibliographie p{
-    text-indent:40px;
-    margin-bottom: 10px;
+.bibliographie p {
+  text-indent: 40px;
+  margin-bottom: 10px;
 }
 
-.bibliographie ul{
-    margin-left: 20px;
+.bibliographie ul {
+  margin-left: 20px;
 }
 
-.bibliographie a{
-    color:black;
+.bibliographie a {
+  color: black;
 }
 
 /* fin bibliographie */
 
 /* tout textes */
 
-.titreOeuvre{
-    font-size:25px;
-    text-align: center;
-    margin-top: 20px;
+.titreOeuvre {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.oeuvreImg img{
-    width:50%;
-    display:block;
-    margin: auto;
-    margin-bottom:10px;
-    margin-top:30px;
-    border-radius:5px;
+.oeuvreImg img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
 }
 
-.oeuvre p{
-    margin: 10;
-    font-size: 14px;
+.oeuvre p {
+  margin: 10;
+  font-size: 14px;
 }
 
-.oeuvre p:last-child{
-    margin-bottom:30px;
+.oeuvre p:last-child {
+  margin-bottom: 30px;
 }
 
-.oeuvre{
-    width:80%;
-    display: block;
-    margin: auto;
-    background-color: rgba(221, 217, 216, 0.459);
-    margin-bottom:30px;
-    padding:10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius:5px;
+.oeuvre {
+  width: 80%;
+  display: block;
+  margin: auto;
+  background-color: rgba(221, 217, 216, 0.459);
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
 }
 
-.oeuvre .titreOeuvre{
-    margin-bottom:30px;
+.oeuvre .titreOeuvre {
+  margin-bottom: 30px;
 }
 
-.droite{
-    text-align:right!important;
+.droite {
+  text-align: right !important;
 }
 
-.left{
-    text-align:left!important;
+.left {
+  text-align: left !important;
 }
 
-.sousTitreTexte{
-    text-align:center;
-    margin-bottom:20px;
-    margin-top:-20px;
-    font-style: italic;
-    font-size:13px;
-    letter-spacing: 3px;
+.sousTitreTexte {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 3px;
 }
 
-.oeuvreImg p{
-    text-align:center;
-    margin-bottom:0px;
+.oeuvreImg p {
+  text-align: center;
+  margin-bottom: 0px;
 }
 
-.oeuvreImg p:last-child{
-    margin-bottom:20px;
+.oeuvreImg p:last-child {
+  margin-bottom: 20px;
 }
 
-#selection{
-    display:flex;
-    justify-content:center;
-    margin-bottom: 10px;
+#selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-#selection:last-child{
-    margin-bottom:60px;
+#selection:last-child {
+  margin-bottom: 60px;
 }
 
-#selection a{
-    color:black;
+#selection a {
+  color: black;
 }
 
-#selection a{
-    margin-right:10px;
-    margin-left: 10px;
+#selection a {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-.oeuvre .previewImg img{
-    width: 35%;
-    border-radius: 3px;
-    display: block;
-    margin: auto;
+.oeuvre .previewImg img {
+  width: 35%;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
 }
 
-.oeuvre .previewImg img:hover, .textePreview:hover{
-    cursor: pointer;
+.oeuvre .previewImg img:hover,
+.textePreview:hover {
+  cursor: pointer;
 }
 
-.oeuvre .previewImg{
-    font-size:10px;
-    width:20%;
-    text-align:center;
-    margin-left: -30px;
+.oeuvre .previewImg {
+  font-size: 10px;
+  width: 20%;
+  text-align: center;
+  margin-left: -30px;
 }
 
-.textePreview{
-    margin-top:10px;
+.textePreview {
+  margin-top: 10px;
 }
 
-.oeuvreImgColl{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-    margin-bottom: 30px;
+.oeuvreImgColl {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-.oeuvreImgColl img{
-    width:20%;
-    border-radius: 2px;
+.oeuvreImgColl img {
+  width: 20%;
+  border-radius: 2px;
 }
 
-.photoDroite, .photoGauche, .photoGauche2{
-    border-radius:3px;
+.photoDroite,
+.photoGauche,
+.photoGauche2 {
+  border-radius: 3px;
 }
 
-.photoDroite{
-    float:right;
-    margin-left :20px;
-    width:30%;
+.photoDroite {
+  float: right;
+  margin-left: 20px;
+  width: 30%;
 }
 
-.photoGauche, .photoGauche2{
-    float:left;
-    margin-right :20px;
-    width:40%;
+.photoGauche,
+.photoGauche2 {
+  float: left;
+  margin-right: 20px;
+  width: 40%;
 }
 
-.photoGauche2{
-    width:30%;
+.photoGauche2 {
+  width: 30%;
 }
 
 /* fin tout textes */
@@ -277,23 +318,23 @@ footer div{
 /* Scroll bar */
 
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f100;
+  background: #f1f1f100;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {    
-    background-color: rgba(41, 37, 37, 0.479);
-    border-radius:20px;
+::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 37, 37, 0.479);
+  border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 /* Fin scroll bar */
