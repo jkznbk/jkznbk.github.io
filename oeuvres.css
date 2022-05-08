@@ -39,6 +39,14 @@
   margin-left: 20px;
 }
 
+.trait3 {
+  width: 80.2%;
+  height: 1px;
+  background-color: rgba(61, 59, 56, 0.514);
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
 .ban {
   display: flex;
   justify-content: flex;
@@ -70,6 +78,17 @@ blockquote {
 .ligneImg {
   display: flex;
   justify-content: center;
+}
+.ligneImg2 {
+  display: flex;
+  justify-content: center;
+}
+
+.ligneImg2 img {
+  width: inherit;
+  height: 500px;
+  margin: 50px;
+  margin-top: 0px;
 }
 
 .content {

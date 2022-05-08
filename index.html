@@ -1,432 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link href="header.css" rel="stylesheet">
-    <link href="oeuvres.css" rel="stylesheet">
-    <script src='main.js'></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="header.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-</head>
-
-<body>
-    
+  </head>
+  <body>
     <header>
-        <div class="nav">
-            <div class="dropdown">
-                <button type="button" style="font-weight:bold;" onclick="goToAnnees()" id="dropdownMenuButton1">Oeuvres</button>
-                <button type="button" id="dropdownMenuButton1" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#per1">2010-2020</a></li>
-                    <li><a class="dropdown-item" href="#per2">2000-2010</a></li>
-                    <li><a class="dropdown-item" href="#per3">1990-2000</a></li>
-                    <li><a class="dropdown-item" href="#per4">1980-1990</a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button type="button" onclick="goToTextes()" id="dropdownMenuButton2">Textes explicatifs</button>
-                <button type="button" id="dropdownMenuButton2" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item" href="#txt1">Le Retable</a></li>
-                    <li><a class="dropdown-item" href="#txt2">Epure et Figure</a></li>
-                    <li><a class="dropdown-item" href="#txt3">Années 90</a></li>
-                    <li><a class="dropdown-item" href="#txt3">Travail, Fatigue</a></li>
-                </ul>
-            </div>
-            <li class="nav-item">
-                <a class="nav-link" href="bibliographie.html">Résumé bibliographique</a>
+      <div class="nav">
+        <li class="nav-item">
+          <a class="nav-link" style="font-weight: bold" href="index.html"
+            >Accueil</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="oeuvres.html">Oeuvres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galerie.html">Galerie de photos</a>
+        </li>
+
+        <div class="dropdown">
+          <button type="button" onclick="goToTextes()" id="dropdownMenuButton2">
+            Textes explicatifs
+          </button>
+          <button
+            type="button"
+            id="dropdownMenuButton2"
+            class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#retable">Le Retable</a></li>
+            <li><a class="dropdown-item" href="#epure">Epure et Figure</a></li>
+            <li><a class="dropdown-item" href="#90">Années 90</a></li>
+            <li>
+              <a class="dropdown-item" href="#travail">Travail, Fatigue</a>
             </li>
+          </ul>
         </div>
-        <div class="navS">
-            <a class="nav-link" href="galerie.html"><ion-icon name="images"></ion-icon></a>
-            <a class="nav-link" href="oeuvres.html"><ion-icon name="calendar"></ion-icon></a>
-            <a class="nav-link" href="textes.html"><ion-icon name="albums"></ion-icon></a>
-            <a class="nav-link" href="bibliographie.html"><ion-icon name="person"></ion-icon></a>
-        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="bibliographie.html">Bibliographie</a>
+        </li>
+      </div>
+      <div class="navS">
+        <a class="nav-link" href="galerie.html"
+          ><ion-icon name="images"></ion-icon
+        ></a>
+        <a class="nav-link" href="oeuvres.html"
+          ><ion-icon name="calendar"></ion-icon
+        ></a>
+        <a class="nav-link" href="textes.html"
+          ><ion-icon name="albums"></ion-icon
+        ></a>
+        <a class="nav-link" href="bibliographie.html"
+          ><ion-icon name="person"></ion-icon
+        ></a>
+      </div>
     </header>
-
-    <div class="titre">Oeuvres</div>
-
-    <div id="selection">
-        <a href="#chaos2">Chaos 2</a>
-        <a href="#chaos">Chaos</a>
-        <a href="#grandedef">Grande déflagration</a>
-        <a href="#tension">Tension</a>
-        <a href="#cubehors">Le cube hors de lui</a>
-        <a href="#variation">Variation</a>
-        <a href="#debout">Debout devant l'éternité</a>
-        <a href="#steman">Rétrospective 100 ans de travail</a>
-    </div>
-    <div id="selection">
-        <a href="#fontaine">Fontaine</a>
-        <a href="#flanc">Petite tension posée sur son flanc</a>
-        <a href="#boisContre">Bois et contreplaqué</a>
-        <a href="#entrelas">Bois et contreplaqué</a>
-    </div>
-
-    <div class="content">
-        <div id="per1" class="periode">2010-2020</div>
-
-        <!-- Chaos 2 -->
-        <div id="chaos2" class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2021</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="chaos" class="oeuvreEtDesc">
-            <div class="nom">Chaos 2</div>
-            <div class="detail">31/05/2021 - 04/07/2021</div>
-            <div class="detail">Pierre noire</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaos20211.png">
-                <img class="imgOeuvres" src="oeuvres/chaos20214.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaos20213.png">
-                <img class="imgOeuvres" src="oeuvres/chaos20212.png">
-            </div>
-        </div>
-
-        <!-- Chaos -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2020</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="chaos" class="oeuvreEtDesc">
-            <div class="nom">Chaos</div>
-            <div class="detail">Pierre noire</div>
-            <div class="detail">150x150 centimètres</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaosverso1.png">
-                <img class="imgOeuvres" src="oeuvres/chaosverso2.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaos.png">
-                <img class="imgOeuvres" src="oeuvres/chaos9.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaos5.png">
-                <img class="imgOeuvres" src="oeuvres/chaos6.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/chaos7.png">
-                <img class="imgOeuvres" src="oeuvres/chaos8.png">
-            </div>
-        </div>
-
-        <!-- Grande déflagration -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2014</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="grandedef" class="oeuvreEtDesc">
-            <div class="nom">Grande déflagration</div>
-            <div class="detail">Papier kraft et mine de plomb</div>
-            <div class="detail">500-500cm au sol</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/grandedef1.png">
-                <img class="imgOeuvres" src="oeuvres/grandedef2.png">
-            </div>
-        </div>
-
-        <!-- Mise à plat -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2014</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="miseaplat" class="oeuvreEtDesc">
-            <div class="nom">Mise à plat</div>
-            <div class="detail">Bois, clou et zinc</div>
-            <div class="detail">230x110 centimètres au sol</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/miseaplat2.png">
-                <img class="imgOeuvres" src="oeuvres/miseaplat3.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/miseaplat1.png">
-                <img class="imgOeuvres" src="oeuvres/miseaplat4.png">
-            </div>
-        </div>
-
-        <!-- Mise à plat -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2014</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="miseaplat" class="oeuvreEtDesc">
-            <div class="nom">Mise à plat</div>
-            <div class="detail">Bois, clou et zinc</div>
-            <div class="detail">230x110 centimètres au sol</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/miseaplat2.png">
-                <img class="imgOeuvres" src="oeuvres/miseaplat3.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/miseaplat1.png">
-                <img class="imgOeuvres" src="oeuvres/miseaplat4.png">
-            </div>
-        </div>
-
-        <!-- Mise à plat avec morphe -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">2014</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="miseaplatmorphe" class="oeuvreEtDesc">
-            <div class="nom">Mise à plat avec morphe</div>
-            <div class="detail">Mine de plomb</div>
-            <div class="detail">150x230 centimètres</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/miseaplatmorphe.png">
-            </div>
-        </div>
-
-        <!-- Tryptique déflagration -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="trypdef" class="oeuvreEtDesc">
-            <div class="nom">Tryptique déflagration</div>
-            <div class="detail">Mine de plomb et pierre noire</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/trypdef.png">
-            </div>
-        </div>
-
-        <!-- Tension -->
-        <div id="per2" class="periode">2000-2010</div>
-
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">???</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="tension" class="oeuvreEtDesc">
-            <div class="nom">Tension</div>
-            <div class="detail">Bois</div>
-            <div class="detail">200 centimètres de hauteur</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/tension1.png">
-                <img class="imgOeuvres" src="oeuvres/tension2.png">
-                <img class="imgOeuvres" src="oeuvres/tension3.png">
-            </div>
-        </div>
-
-        <!-- Le cube hors de lui -->
-        <div id="per3" class="periode">1990-2000</div>
-
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">1998</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="tension" class="oeuvreEtDesc">
-            <div class="nom">Le cube hors de lui</div>
-            <div class="detail">Bois et zinc</div>
-            <div class="detail">30 centimètres</div>
-            <div class="detail">Cube XXI arrête</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui1.png">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui2.png">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui3.png">
-            </div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui4.png">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui5.png">
-                <img class="imgOeuvres" src="oeuvres/lecubehorsdelui6.png">
-            </div>
-        </div>
-
-        <!-- Rétrospective -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">1998</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="steman" class="oeuvreEtDesc">
-            <div class="nom">Rétrospective 100 ans de travail</div>
-            <div class="detail">Chapelle Saint Eman, Chartres</div>
-            <div class="detail">Exposition personelle</div>
-            <div class="ligneImg">
-                <img style="width:50%" class="imgOeuvres" src="oeuvres/steman.png">
-            </div>
-        </div>
-
-        <!-- Variations -->
-        <div id="per3" class="periode">1990-2000</div>
-
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">1996</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="variation" class="oeuvreEtDesc">
-            <div class="nom">Variation</div>
-            <div class="detail">Exposition en 1998</div>
-            <div class="detail">Bois et zinc</div>
-            <div class="detail">300x220 centimètres</div>
-            <div>
-                <img class="imgG" src="oeuvres/variation98.png">
-                <blockquote>"Des motifs immenses dont le mouvement est arrêté dans l'espace, des figures frustres et sans visage, dont les silouhettes anguleuses ont des accents cubistes. Ls volumes deviennent de gigantesques personnages sur ossature bois. Ce qui passionne Joêlle Lionne, ce qui fait le fil conducteur de son travail depuis une dizainne d'années, est ce rapport à la figure et les compositions qu'il peut susciter..."</blockquote>
-            </div>
-        </div>
-
-        <!-- Fontaine -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="fontaine" class="oeuvreEtDesc">
-            <div class="nom">Fontaine</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/fontaine1.png">
-                <img class="imgOeuvres" src="oeuvres/fontaine2.png">
-                <img class="imgOeuvres" src="oeuvres/fontaine3.png">
-            </div>
-        </div>
-
-        <!-- Debout devant l'éternité -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="debout" class="oeuvreEtDesc">
-            <div class="nom">Debout devant l'éternité</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/debout1.png">
-                <img class="imgOeuvres" src="oeuvres/debout2.png">
-            </div>
-        </div>
-
-        <!-- Petite tension posée sur son flanc -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="flanc" class="oeuvreEtDesc">
-            <div class="nom">Petite tension posée sur son flanc</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/flanc.png">
-                <img class="imgOeuvres" src="oeuvres/flanc2.png">
-            </div>
-        </div>
-
-        <div id="per4" class="periode">1980-1990</div>
-
-        <!-- Bois et contreplaqué -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="boisContre" class="oeuvreEtDesc">
-            <div class="nom">Bois et contreplaqué</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/boisContre.png">
-            </div>
-        </div>
-
-        <!-- Entrelas -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="entrelas" class="oeuvreEtDesc">
-            <div class="nom">Entrelas</div>
-            <div class="detail">2m10 de hauteur</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/entrelas.png">
-            </div>
-        </div>
-
-        <!-- Etretat -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="etretat" class="oeuvreEtDesc">
-            <div class="nom">Etretat</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/etretat.png">
-            </div>
-        </div>
-
-        <!-- Grande tension -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="grandetension" class="oeuvreEtDesc">
-            <div class="nom">Grande tension</div>
-            <div class="detail">2m10 de hauteur</div>
-            <div class="detail">Haut bois et acier</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/grandetension.png">
-            </div>
-        </div>
-
-        <!-- Dev -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">1989</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="dev" class="oeuvreEtDesc">
-            <div class="nom">Développement</div>
-            <div class="detail">Acier et bois</div>
-            <div class="detail">85x50x30 centimètres</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/dev.png">
-                <img class="imgOeuvres" src="oeuvres/dev2.png">
-                <img class="imgOeuvres" src="oeuvres/dev3.png">
-            </div>
-        </div>
-
-        <!-- Sans titre 1 -->
-        <div class="ban">
-            <div class="trait1"></div>
-            <div class="annee">?</div>
-            <div class="trait2"></div>
-        </div>
-        <div id="st1" class="oeuvreEtDesc">
-            <div class="nom">Sans titre</div>
-            <div class="ligneImg">
-                <img class="imgOeuvres" src="oeuvres/ST1_1.png">
-                <img class="imgOeuvres" src="oeuvres/ST1_2.png">
-                <img class="imgOeuvres" src="oeuvres/ST1_3.png">
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div>Element</div>
-        <div>Element</div>
-        <div>Element</div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</body>
+    <div class="titre">Joëlle LIONNE</div>
+    <div class="soustitre">Sculpteure</div>
+    <div class="sous">Née à Grenoble en 1948</div>
+    <img src="galerie/66.jpg" />
+  </body>
 </html>
