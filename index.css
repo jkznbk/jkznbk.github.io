@@ -1,0 +1,21 @@
+img {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+
+.titre {
+  font-size: 100px;
+}
+
+.soustitre {
+  font-size: 50px;
+  text-align: center;
+}
+
+.sous {
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
