@@ -1,5 +1,5 @@
 .imgOeuvres {
-  width: 30%;
+  width: 300px;
   margin: 5px;
 }
 
@@ -10,13 +10,13 @@
 
 .oeuvreEtDesc {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .oeuvreEtDesc .nom {
   margin-bottom: 20px;
   font-size: 30px;
-  margin-left: 10%;
+  text-align: center;
 }
 
 .oeuvreEtDesc img {
@@ -64,7 +64,7 @@ blockquote {
   font-style: italic;
   font-size: 13px;
   letter-spacing: 3px;
-  margin-left: 10%;
+  text-align: center;
 }
 
 blockquote {
@@ -78,6 +78,12 @@ blockquote {
 .ligneImg {
   display: flex;
   justify-content: center;
+}
+
+.wrap{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
 }
 
 .content {
