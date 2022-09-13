@@ -140,33 +140,33 @@ footer div {
   margin-bottom: 40px;
 }
 
-/* bibliographie */
+/* biographie */
 
-.bibliographie {
+.biographie {
   width: 70%;
   display: block;
   margin: auto;
 }
 
-.bibliographie li {
+.biographie li {
   list-style-type: circle;
   text-indent: 30px;
 }
 
-.bibliographie p {
+.biographie p {
   text-indent: 40px;
   margin-bottom: 10px;
 }
 
-.bibliographie ul {
+.biographie ul {
   margin-left: 20px;
 }
 
-.bibliographie a {
+.biographie a {
   color: black;
 }
 
-/* fin bibliographie */
+/* fin biographie */
 
 /* tout textes */
 

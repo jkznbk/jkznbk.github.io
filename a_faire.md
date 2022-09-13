@@ -1,8 +1,8 @@
 # **A faire**
 
 - <del>Mettre toutes les oeuvres sur oeuvres.html par ordre de dates
-- Ajouter photo de Joëlle dans la bibliographie
-- <del>Ajouter *Années 90* et début *Travail et Fatigue* dans textes.html
+- Ajouter photo de Joëlle dans la biographie
+- <del>Ajouter _Années 90_ et début _Travail et Fatigue_ dans textes.html
 - <del>Ajouter le nom de Joëlle à plusieurs endroits du site
 - <del>Faire le footer
 - <del>Trouver un moyen de retirer la bordure rouge autour du dropdown button cliqué
